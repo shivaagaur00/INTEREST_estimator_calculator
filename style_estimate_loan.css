@@ -143,7 +143,6 @@ form {
 @media (max-width: 768px) {
     form {
         width: 80vw;
-        height: auto;
         padding: 2rem;
         border-radius: 20px;
     }
@@ -166,12 +165,12 @@ form {
 @media (max-width: 480px) {
     header {
         font-size: 1.2rem;
-        height: auto;
+        height: 10vh;
         padding: 1rem;
     }
 
     main {
-        height: auto;
+        height: 80vh;
     }
 
     form {
