@@ -1,0 +1,4 @@
+    body { font-family: 'PT Sans', sans-serif; padding: 20px; }
+        .bill-container { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; }
+        h1, p { text-align: center; }
+        .details { margin: 20px 0; }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style_estimate_loan.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1 class="heading" id="header_heading">Interest Calculator</h1>
+        </div>
+    </header>
+    <main>
+        <form class="form">
+            <div class="points" id="choose_option">
+                <label for="select">Choose the jewelry type:</label>
+                <select id="select" name="select" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="GOLD">GOLD</option>
+                    <option value="SILVER">SILVER</option>
+                    <option value="PLATINUM">PLATINUM</option>
+                </select>
+            </div>
+            <div class="points">
+                <label for="weight">Enter weight in gm:</label>
+                <input type="number" name="weight" id="weight" placeholder="Enter weight in gm">
+            </div>
+            <div class="points">
+                <label for="price">Enter price of 10 gm units:</label>
+                <input type="number" name="price" id="price" placeholder="Enter price">
+            </div>
+            <div class="points">
+                <label for="rate">Enter interest rate for a month:</label>
+                <input type="number" name="interest" id="interest" placeholder="Enter rate of interest">
+            </div>
+            <div class="points" id="button_calculate">
+                <button type="button" id="btnSubmit">Calculate</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>

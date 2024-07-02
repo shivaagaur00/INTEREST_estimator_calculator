@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.flex_provide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.head {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #1e306b; /* Dark blue */
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Playwrite DE Grund", cursive;
+    color: #EBF4F6; /* Light grey */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a7d1d5; /* Light blue */
+}
+
+.twoParts {
+    height: 22rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    background-color: #95d2d8; /* Aqua blue */
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.innerbox {
+    height: 60%;
+    width: 35%;
+    border-radius: 40px;
+    background-color: #4cb2c2; /* Turquoise */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.text_estimatebox {
+    display: flex;
+    flex-direction: column;
+}
+
+.innerbox h1 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.innerbox h2 {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Dark grey */
+}
+
+.image {
+    height: 60%;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: #333; /* Dark grey */
+    color: #EBF4F6; /* Light grey */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    main {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .twoParts {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .innerbox {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .image {
+        height: 50%;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+    }
+
+    .twoParts {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .innerbox {
+        width: 100%;
+    }
+
+    .innerbox h1 {
+        font-size: 16px;
+    }
+
+    .innerbox h2 {
+        font-size: 8px;
+    }
+
+    .image {
+        height: 40%;
+        width: 80%;
+    }
+}

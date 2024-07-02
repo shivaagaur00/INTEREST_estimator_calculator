@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="css_interest.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-heading" id="header-heading">Interest Calculator</h1>
+    </header>
+    <main>
+        <form class="calc-form" id="calc-form"> 
+            <div class="form-group">
+                <label for="principal">Enter principal amount</label>
+                <input type="number" name="principal" id="principal" placeholder="Enter principal amount">
+            </div>
+            <div class="form-group">
+                <label for="interest">Enter interest rate for a month:</label>
+                <input type="number" name="interest" id="interest-input" placeholder="Enter rate of interest">
+            </div>
+            <div class="form-group">
+                <label for="date">Select date:</label>
+                <input type="date" id="date-input" name="date">
+            </div>
+            <div class="form-group" id="calculate-button">
+                <button type="button" id="calculate-btn">Calculate</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="interest_calculator_js.js"></script>
+</body>
+</html>
